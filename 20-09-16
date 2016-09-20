@@ -22,7 +22,7 @@ namespace ConsoleApplication4
             long factorial; int n, i; 
             factorial = n = i = 1;
             n = Convert.ToInt16(Console.ReadLine());
-            while(i++ < n)
+            while (i++ < n)
             {
                 factorial = factorial * i;
             }
