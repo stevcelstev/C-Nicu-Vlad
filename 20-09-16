@@ -1,0 +1,25 @@
+// 20.09.2016
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // CITIREA UNUI CARACTER
+            char caracter;
+            Console.WriteLine("APASATI O TASTA, APOI ENTER!");
+            caracter = (char)Console.Read();
+            Console.WriteLine("AI TASTAT: " + caracter);
+
+            
+        }
+    }
+}
+
