@@ -27,6 +27,20 @@ namespace ConsoleApplication4
                 factorial = factorial * i;
             }
             Console.WriteLine("{0}! = {1}", n, factorial);
+            
+            //Instructiunea if
+            /**char ch, rasp = 'A';
+            Console.WriteLine("Introduceti un caracter");
+            ch = Convert.ToChar(Console.ReadLine());
+            if (ch == rasp)
+            {
+                Console.WriteLine("Raspuns corect");
+            }
+            else
+            {
+                Console.WriteLine("Raspuns gresit");
+            }
+            **/
         }
     }
 }
