@@ -18,7 +18,15 @@ namespace ConsoleApplication4
             caracter = (char)Console.Read();
             Console.WriteLine("AI TASTAT: " + caracter);
 
-            
+            //  FACTORIAL
+            long factorial; int n, i; 
+            factorial = n = i = 1;
+            n = Convert.ToInt16(Console.ReadLine());
+            while(i++ < n)
+            {
+                factorial = factorial * i;
+            }
+            Console.WriteLine("{0}! = {1}", n, factorial);
         }
     }
 }
