@@ -20,8 +20,30 @@ namespace ConsoleApplication5
         }
         
         static void Main(string[] args)
-        {
             AfisareInterval(1, 5);
+        }
+        
+        static void Main(string[] args)      
+        {
+        // SUMA UNUI VECTOR
+            int[] x;
+            int n, i, s = 0;
+            Console.Write("NUMARUL DE ELEMENTE: ");
+            n = int.Parse(Console.ReadLine());
+
+            x = new int[n];
+            for (i = 0; i < x.Length; i++)
+            {
+                Console.Write("x[" + (i + 1) + "]= ");
+                x[i] = int.Parse(Console.ReadLine());
+            }
+
+            for (i = 0; i < x.Length; i++)
+            {
+                s += x[i];
+            }
+            Console.Write("SUMA ELEMENTELOR ESTE: " + s);
+            Console.ReadLine();
         }
     }
 }
