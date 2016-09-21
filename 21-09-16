@@ -23,9 +23,9 @@ namespace ConsoleApplication5
             AfisareInterval(1, 5);
         }
         
+        // SUMA UNUI VECTOR
         static void Main(string[] args)      
         {
-        // SUMA UNUI VECTOR
             int[] x;
             int n, i, s = 0;
             Console.Write("NUMARUL DE ELEMENTE: ");
