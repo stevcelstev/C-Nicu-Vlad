@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        // SUBPROGRAM 
+        static void AfisareInterval(short inf, short sup)
+        {
+            short i;
+            for (i = inf; i <= sup; i++)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+        }
+        
+        static void Main(string[] args)
+        {
+            AfisareInterval(1, 5);
+        }
+    }
+}
