@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Primele programe perfecte
+            int n, i;
+            int[] v;
+            n = Convert.ToInt16(Console.ReadLine());
+            v = new int[n];
+            for (i = 0; i < n; ++i)
+            {
+                v[i] = (i + 1) * (i + 1);
+            }
+            for (i = 0; i < n; ++i)
+            {
+                Console.Write("{0} ", v[i]);
+            }
+
+        }
+    }
+}
