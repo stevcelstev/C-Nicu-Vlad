@@ -23,7 +23,22 @@ namespace ConsoleApplication1
             {
                 Console.Write("{0} ", v[i]);
             }
-
+                
+            //Paritate1 #633 pbinfo
+            int n, evenNum = 0, oddNum = 0;
+            n = Convert.ToInt16(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+                int x;
+                x = Convert.ToInt16(Console.ReadLine());
+                if (x % 2 == 0) evenNum++;
+                else oddNum++;
+            }
+            Console.WriteLine(Math.Abs(evenNum - oddNum));
+        }
+    }
+}
+            
         }
     }
 }
