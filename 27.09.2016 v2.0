@@ -1,0 +1,91 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            int[,] a = new int[4, 4] { { 1, 1, 1, 1 }, { 2, 2, 2, 2 }, { 3, 3, 3, 3 }, {4, 4, 4, 4} };
+            int i, j;
+            for (i = 0; i < 4; i++)
+            {
+                for (j = 0; j < 4; j++)
+                    Console.Write("{0} ", a[i, j]);
+                Console.WriteLine();
+            }
+             */
+            // Problema cu matrice regulata
+
+            /*
+            int[,] a;
+            int L, C, i, j;
+
+            L = int.Parse(Console.ReadLine());
+            C = int.Parse(Console.ReadLine());
+            a = new int[L, C];
+
+            Random R = new Random();
+            for (i = 0; i < L; i++)
+                for (j = 0; j < C; j++)
+                    a[i, j] = R.Next(0, 100);
+
+            for (i = 0; i < L; i++)
+            {
+                for (j = 0; j < C; j++)
+                    Console.Write(a[i, j] + " ");
+                Console.WriteLine();
+            }
+
+            for (i = 0; i < L; i++)
+            {
+                int aux = a[i, 1];
+                a[i, 1] = a[i, 3];
+                a[i, 3] = aux;
+            }
+
+            for (i = 0; i < L; i++)
+            {
+                for (j = 0; j < C; j++)
+                    Console.Write(a[i, j] + " ");
+                Console.WriteLine();
+            }
+             */
+
+            int i, j;
+            int[][] a;
+
+            a = new int[3][]
+
+            {
+                new int[]  {1, 1, 1},
+                new int[]  {2, 2, 2, 2, 2},
+                new int[]  {3, 3, 3, 3}
+            };
+
+            for (i = 0; i < 3; i++)
+            {
+                for (j = 0; j < a[i].Length; j++)
+                    Console.Write("{0} ", a[i][j]);
+                Console.WriteLine();
+            }
+
+            //Afisare cu foreach
+            /*
+            foreach (int[] v in a)
+            {
+                foreach (int elem in v)
+                    Console.Write(elem + " ");
+                Console.WriteLine();
+            }
+            */
+
+            
+        }
+    }
+}
