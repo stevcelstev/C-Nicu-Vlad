@@ -20,14 +20,21 @@ namespace ConsoleApplication7
                 new int[] {3, 3, 3, 3}
             };
 
+            foreach(int[] v in a)
+            {
+                foreach (int elem in v)
+                    Console.Write(elem + " ");
+                Console.WriteLine();
+            }
+
+            /*
+             
             for (i = 0; i < 3; i++)
             {
                 for (j = 0; j < a[i].Length; j++)
                     Console.Write("{0} ", a[i][j]);
                 Console.WriteLine();
             }
-
-            /*
             
             // int[,] a = { {1, 1, 1, 1}, {2, 2, 2, 2}, {3, 3, 3, 3} };
             int [,] a = new int[3, 4] { {1, 1, 1, 1}, {2, 2, 2, 2}, {3, 3, 3, 3} };
