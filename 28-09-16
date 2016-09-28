@@ -48,6 +48,16 @@ namespace ConsoleApplication8
             // + functii de cautare pe grup
             // XII-A
             
+            string[] text = { "start", "stop", "final", "epocal", "stare", "strop"};
+            Console.WriteLine("\nCuvinte care incep cu st:");
+            foreach (string x in text)
+                if (x.StartsWith("st"))
+                    Console.WriteLine(x);
+            Console.WriteLine("\nCuvinte care se termina cu al: ");
+            foreach (string x in text)
+                if (x.EndsWith("al"))
+                    Console.WriteLine(x);
+            
             Console.ReadKey();
         }
     }
