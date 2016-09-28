@@ -45,6 +45,9 @@ namespace ConsoleApplication8
             string sir = "Deny are mare valoare!";
             Console.WriteLine("'" + sir + "'" + "= " + sir.Length);
             
+            // + functii de cautare pe grup
+            // XII-A
+            
             Console.ReadKey();
         }
     }
