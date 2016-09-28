@@ -30,6 +30,13 @@ namespace ConsoleApplication8
             s1 = s2;
             Console.WriteLine(s1);
             
+            string mesaj = "primul \n al doilea";
+            Console.WriteLine(mesaj);
+
+            mesaj = @"primul 
+            al doilea";
+            Console.WriteLine(mesaj);
+            
             Console.ReadKey();
         }
     }
