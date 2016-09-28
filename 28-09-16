@@ -13,19 +13,23 @@ namespace ConsoleApplication8
             string s1, s2, s;
             s1 = "Hello ";
             s2 = "world!";
-            s = s1 + s2;
+            s = s1 + s2; //Concatenare
 
             Console.WriteLine(s);
 
             s1 = "casa";
             s2 = "casa";
-
+            //Operatori de egalitate
             // if (s1 == s2) { Console.WriteLine("IDENTICE!"); }
             // else { Console.WriteLine("NU SUNT IDENTICE!"); }
 
             if (s1 != s2) { Console.WriteLine("'{0}' DIFERIT DE '{1}'", s1, s2); }
             else { Console.WriteLine("'{0}' IDENTIC CU '{1}'", s1, s2); }
-
+            
+            //Operatorl de atribuire
+            s1 = s2;
+            Console.WriteLine(s1);
+            
             Console.ReadKey();
         }
     }
