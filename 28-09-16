@@ -57,6 +57,17 @@ namespace ConsoleApplication8
             foreach (string x in text)
                 if (x.EndsWith("al"))
                     Console.WriteLine(x);
+                    
+            string litere = "abcdefghijklmnabcdefghijklmn";
+            char[] litereCautate = { 'c', 'a', 't', 'h' };
+            Console.WriteLine("\nPrima aparitie a lui c: " + litere.IndexOf('c'));
+            Console.WriteLine("\nAparitia lui a dupa pozitia 3: " + litere.IndexOf('a', 3));
+            Console.WriteLine("\nCautare in subsir a lui b: " + litere.IndexOf('b', 4, 7));
+            Console.WriteLine("\nUltima aparitie a lui c: " + litere.LastIndexOf('c'));
+
+            // Gasesc indicele primei aparitii a unui caracter din litereCautate in litere
+            Console.WriteLine("\nPrima aparitie: " + litere.IndexOfAny(litereCautate));
+            Console.WriteLine("\nPrima aparitie: " + litere.IndexOfAny(litereCautate, 5));
             
             Console.ReadKey();
         }
