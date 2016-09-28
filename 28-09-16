@@ -10,6 +10,10 @@ namespace ConsoleApplication8
     {
         static void Main(string[] args)
         {
+            string sirCitit;
+            sirCitit = Console.ReadLine();
+            Console.WriteLine(sirCitit);
+            
             string s1, s2, s;
             s1 = "Hello ";
             s2 = "world!";
