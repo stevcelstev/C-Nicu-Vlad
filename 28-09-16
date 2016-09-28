@@ -37,6 +37,10 @@ namespace ConsoleApplication8
             al doilea";
             Console.WriteLine(mesaj);
             
+            // lungimea unu sir de caractere
+            string sir = "Deny are mare valoare!";
+            Console.WriteLine("'" + sir + "'" + "= " + sir.Length);
+            
             Console.ReadKey();
         }
     }
