@@ -1,0 +1,23 @@
+using System;
+
+class Point
+{
+	public double x;
+	public double y;
+}
+
+class Segmdr
+{
+	public static void Main()
+	{
+		Point punct1 = new Point();
+		Point punct2 = new Point();
+		double dist;
+		punct1.x = 3;
+		punct1.y = 4;
+		punct2.x = 5;
+		punct2.y = 3;
+		dist = Math.Sqrt((punct1.x - punct2.x)*(punct1.x-punct2.x) + (punct1.y-punct2.y)*(punct1.y-punct2.y));
+		Console.WriteLine("Distanta dintre punctele ({0},{1}) si ({2},{3}) este: {4:#.##}", punct1.x,punct1.y,punct2.x, punct2.y, dist);
+	}
+}
