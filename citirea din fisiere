@@ -13,7 +13,7 @@ namespace ConsoleApplication6
         {
             StreamReader cin = new StreamReader("D:\\12A\\Visual\\date.txt");
             string linie = cin.ReadLine();
-            cin.Close();char[] separator = { ' ' };
+            cin.Close(); char[] separator = { ' ' };
 
             string[] cuvinte = linie.Split(separator, StringSplitOptions.RemoveEmptyEntries);
 
@@ -21,7 +21,9 @@ namespace ConsoleApplication6
             foreach (string cuv in cuvinte)
                 cout.WriteLine(cuv);
             cout.Close();
+            
             // INPUT: Doua puncte doua puncte paranteza paranteza
+            
             // OUTPUT: *Doua
             //         *puncte
             //         *doua
@@ -29,7 +31,5 @@ namespace ConsoleApplication6
             //         *paranteza
             //         *paranteza
         }
-
-        
     }
 }
