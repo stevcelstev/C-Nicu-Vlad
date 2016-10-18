@@ -9,7 +9,6 @@ namespace ConsoleApplication8
     class C
     {
         public const int H = 12;
-
     }
 
     // Constructori
@@ -41,9 +40,7 @@ namespace ConsoleApplication8
             marca = m;
             pret = p;
         }
-
     }
-
 
     // Operatorul This
     class Copil
