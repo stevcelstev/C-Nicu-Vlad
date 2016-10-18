@@ -1,2 +1,3 @@
-# C-Nicu-Vlad
-Lectii cu toata clasa ;)
+# C SHARP 
+
+## lectiile cu toata clasa
