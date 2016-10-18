@@ -1,3 +1,1 @@
-# C SHARP 
-
-## lectiile cu toata clasa
+C SHARP 
