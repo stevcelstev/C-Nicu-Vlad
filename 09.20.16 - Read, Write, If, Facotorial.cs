@@ -1,5 +1,3 @@
-// 20.09.2016
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +26,7 @@ namespace ConsoleApplication4
             }
             Console.WriteLine("{0}! = {1}", n, factorial);
             
-            //Instructiunea if
+            // INSTRUCTIUNEA if
             /**char ch, rasp = 'A';
             Console.WriteLine("Introduceti un caracter");
             ch = Convert.ToChar(Console.ReadLine());
