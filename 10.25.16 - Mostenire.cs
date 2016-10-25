@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 /*
 * Mostenirea -------------------------------------------------------------------------------------------------------------------
 * 
@@ -12,6 +6,12 @@ using System.Threading.Tasks;
 * pentru mostenire. In C# toate clase sunt mostenite.
 * 
 */
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Mostenire
 {
