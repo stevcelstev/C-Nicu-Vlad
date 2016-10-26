@@ -2,7 +2,6 @@
  * Polimorfismul -------------------------------------------------------------
  * 
  * Polimorfismul reprezinta caracteristica unor clase de a se comporta difert.
- * 
  */
 
 // EX1 -----------------------------------------------------------------------
