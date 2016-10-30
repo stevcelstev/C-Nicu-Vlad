@@ -24,7 +24,6 @@ namespace delegari
         {
             raza = r;
         }
-
     }
     
     class DelegateDemo
@@ -39,13 +38,11 @@ namespace delegari
 	     *
              */ 
              
-
             Cerc c = new Cerc(3);
             Mydelegate del = new Mydelegate(c.Aria);
             Console.WriteLine("Aria = {0:#.##}", del());
             del = new Mydelegate(c.LungFrontiera);
             Console.WriteLine("Lungimea frontierei = {0:#.##}", del());
-            
         }
     }
 }
