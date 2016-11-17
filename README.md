@@ -1,3 +1,3 @@
 C#
 
-## Profesor: Nicu Vlad - Laurențiu
+_ Profesor: Nicu Vlad - Laurențiu
