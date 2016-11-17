@@ -1,3 +1,3 @@
-C#
+#`C#`
 
-`Profesor: Nicu Vlad - Laurențiu`
+**Profesor: Nicu Vlad - Laurențiu**
