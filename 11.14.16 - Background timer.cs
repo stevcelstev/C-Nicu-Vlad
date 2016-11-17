@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication3
+namespace BackgroundTimer
 {
     public partial class Form1 : Form
     {
@@ -26,7 +26,6 @@ namespace WindowsFormsApplication3
             var colors = new[] { Color.CornflowerBlue, Color.Green, Color.Aqua, Color.Azure, Color.CadetBlue, Color.Pink };
             var index = DateTime.Now.Second % colors.Length;
             this.BackColor = colors[index];
-
         }
     }
 }
