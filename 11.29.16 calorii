@@ -1,0 +1,51 @@
+#include <fstream>
+#define N 10005
+
+using namespace std;
+ifstream cin ("calorii.in");
+ofstream cout ("calorii.out");
+
+int n;
+int c[N], p[N];
+double cpu[N];
+int i, j;
+int S;
+double Sc;
+
+void insertion_sort (double cpu[], int c[], int p[], int length)
+{
+    int j, temp, w, l;
+
+	for (int i = 1; i <= length; i++)
+        {
+            j = i;
+
+            while (j > 1 && cpu[j] < cpu[j-1]){
+                temp = cpu[j];
+                w = c[j];
+                l = p[j];
+                cpu[j] = cpu[j - 1];
+                c[j] = c[j - 1];
+                cpu[j - 1] = temp;
+                c[j - 1] = w;
+                p[j - 1] = l;
+                j--;
+			  }
+		}
+}
+
+int main()
+{
+    cin >> n;
+    for (i = 1; i <= n; i++)
+        {
+            cin >> c[i] >> p[i];
+            cpu[i] = (float)c[i] / p[i];
+        }
+    cin >> S;
+
+    insertion_sort(cpu, c, p, n);
+
+    for (i = 1; i <= n; i++)
+        cout << c[i] << " " << p[i] << " " << cpu[i] << endl;
+}
