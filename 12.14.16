@@ -1,0 +1,58 @@
+#include <fstream>
+#include <cmath>
+
+using namespace std;
+ifstream cin ("centrale.in");
+ofstream cout ("centrale.out");
+
+int pali (int x)
+{
+    int c1;
+    int c2;
+    int OK = 1;
+    int y = x;
+    c1 = y % 10;
+    y /= 10;
+    while (y)
+    {
+        c2 = y % 10;
+        if (c1 != c2) OK = 0;
+        c1 = c2;
+        y /= 10;
+    }
+    return OK;
+}
+
+int nc (int x)
+{
+    int y = x;
+    int nc = 0;
+    while (y)
+    {
+        y /= 10;
+        nc++;
+    }
+    return nc;
+}
+
+int main()
+{
+    int n;
+    int x;
+    int nr = 0;
+    int i;
+    cin >> n;
+    while (n)
+    {
+        cin >> x;
+        if (nc(x) == 3) nr++;
+        else
+        {
+            i = nc(x) - 2;
+            x = (x / 10) % pow(10, i);
+            if (pali(x) == 1) nr++;
+        }
+
+    }
+    cout << nr;
+}
